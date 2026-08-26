@@ -3,204 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Le Bon VTC — Chauffeur privé à Paris et en Île-de-France. Éco, Van et Berline en véhicule essence hybride. Tarifs sur devis, réservation 24/7." />
-  <title>Le Bon VTC — Chauffeur privé à Paris & en Île-de-France</title>
-  <meta property="og:title" content="Le Bon VTC — Chauffeur privé Paris & Île-de-France" />
-  <meta property="og:description" content="Transferts, mise à disposition et courses sur devis. Véhicule essence hybride, service premium." />
+  <meta name="description" content="Le Bon VTC — Réservation VTC en Île-de-France. Transferts aéroports, gares et mise à disposition. Ponctualité, confort et prix clairs. 24h/24, 7j/7." />
+  <title>Le Bon VTC — Réservation VTC en Île-de-France</title>
+  <meta property="og:title" content="Le Bon VTC — Réservation VTC en Île-de-France" />
+  <meta property="og:description" content="Transferts aéroports, gares et mise à disposition en Île-de-France. Disponible 24h/24, 7j/7." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-  <meta name="theme-color" content="#0c0f14" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAJfElEQVR4nO3dW25dVxkHcB8nr8lbXqm4BKkZAJGRamMGEiQoRYLxgAS0SM0EMgMCrVQLnqMgUSii44gTtB9c3ONz2Ze11+37/aRIlePmLK+zvv+6nO29Nw8ePDhpwdXzJ+9KtwGmOHv2enNSuU2NAaDY6dVZZaFQRQAoeKI6KxwIRQNA4UPZIMgeAIoe6gmDbAGwtPDPnr1O1xjI4Or5k+qDYPUAmFP4ip1eXc0IhTWDYNUAmFL8ip5oriaEwVohsEoAjC18RQ/TwiB1ECQPgDHFr/BhfhCkDIGkAXCs+BU+pAmCVCGQJAAUPrQZBKcnCyl+WM+xVfPSj9cXBYDih7ZDYPYW4NCL2utD/i3BnO3ArBWA4ocyDk2uc1YCkwNA8UM/ITApABQ/9BUCp2s3BlhHirobHQD7UkXxQzn76m/sKmBUACh+6DMEjgaA4od+QyDJGQDQpoMBYPaHvlcBewNA8UP/ITBpC+DEH+o3pU53BoA790J/dtX16BWA2R/aMbZe7wSA2R/6tV3f9zeb479B+OOf/eNkzPcB9Rjq9otP37/z9du17DoACOxbAfDFp++/25UiQJt21e/tOrcCgMBOD83+QJ9u6v3gCsDyH9p3qI5tASAwAQCBbR4+fOj0HwLYdU2AFQAEJgAgMAEAgQkACGzz6sVTl/9C0INAKwAITABAYAIAAhMAEJgAgMAEAAQmACAwAQCBCQAITABAYAIAAhMAEJgAgMAEAAR2f9cXPQcQYrACgMAEAAQmACAwAQCBCQAITABAYAKArn3999+UbkJ71wFAlBD4zo9+exKZACC0r4OHgwCAwOEgACBwODgEpFsOAI8TAJBQS7P/QABAYAIAgs7+AwEAgQkACEwAQNDl/0AAQGACgC65BmAcAQBBl/8DAQCBCQAIOvsPBAAEJgAgMAEAQZf/AwEAgQkAuuMagPE8HBRmeO/p77p4iK4VAAQmAGDG7N8LAQCBCQAITABA0OX/QABAYAKArvz3b78u3YSmCAAIuvwfCAAITABA0Nl/4OGgdF+ozgX2EwB0TyjsJwAIaUoovNfp8n8gACDwSsEhIBzQ8+w/EAAQmACAwAQABCYAIDABAIEJAAhMAEBgAgACEwAQmACAwAQABCYAIDDPBoTArAAgMAEAgQkACEwAQGACAAITABCYAIDABAAEJgAgMM8FKOzNmzcnrbt6/mTR///Bz/+ZrC1MYwXAYmfPXn/zZ47P//RD70IhAqCgHmb/VGEgBMoQAFQTBkIgPwFQSI+zf4owEAJ5CQCyEwL1EAAFRJv957ASyEMAUMSYcwEhsD4BkJnZ//+EQHkCgOpZCaxHAGRk9r/LR4RlCQCKEwLlCIBMzP5p2A6kJQCowpRLh4VAOgIgA7P/OHN/mYj5BABNsgpIQwCszOw/ja1AXm4IsnYH37/bxWavdIa+dEOR+awAMlP81MTDQekiVM9/8WXpZjTJCiCjzz55nPPlQtG38wgAuiEEphMAEJgAyMTspJ9rJADojrAdTwBkYEDmp8/HEQAQmABYmZmoHH1/XPeXAhsEseV4/88bvgip6xWA4sc4CxoAih/jLWgAKH6Mu6BnACWL/6e/+s/o7/3z77+7alta1EP/ffbJ46bOBDavXjx9t/3Fln6AksU/ZcC2OqDX1HP/nVdaQ9s10k0A5Cz+lAO39oG8hij9d15hHXUZALmKf82BW/NATiVi/51XVkvdBUCO4s85cGsdyEtE77/ziuppu166/BSgl8Fbw+u33v7Sr187AdDA4KmlHa22u5Z21Ki7jwF7HTA3baphSXuM/muHFUADg/c27eu7/3ITAA0OjlrbWWu7Wm1nDgIAAhMAjc4KtbW3tvb01t61CICGB0Mt7a6lHVHanVL4AGh9EJRuf+nXj97+pcIHAES2MwA2m00zf5boJf1L/Rz6b5ya68UKAAILeyXgmrPXl59/uPPrjz/4eNWfJ+dVgvqvD2EDIGfhb//9mkHQMv2XX8gtQOrZaxi4xwbvku+vbU+u//oRMgBSWlLIa4RAa/RfWc1vAS4+/NfR7/nrxz9Y5bVTFPDwb0TdEkTov4sR47OkECuA2t8E+nTRwLgLEQC334xU+9eUy/eU/9ba5wD6r5/iDxUALb0ptO2ioXEWKgBSWePwLtKBYM/9d9FQ8Q8EAAQt/oEAgKDFPxAAELT4u7gOAFK7aLigp7ICgMAEwAxrXHlW89Vsqem/eggACEwAVDCLRZr9b+i/OoQLgOvr65OerX1TkBYeTbbEdefj4yR6ANQ2i0Wc/W/ov/IEQMFBHLn4b+i/slwHkHAQj70eXeHrv1psXr14+i7ihRD37t3r6qagAzcFXeY6wP5/++Y4VgArMMPrv1aEPQPoLe1zn8739mnAdWfjYSwrgE6U2LatuY0ij7ArgJ5Sv9TPof/aFzoAILqdW4ClD91sydu3b09OT0+bbn/J90v/ta3dkZ94ELeolnbX0o4o7U5JADQ6GGprb23t6a29axEAEJgAaHBWqLWdtbar1XbmIAAaGxza13f/5eZCoAODpKZPB1oauPqvHfWM8ArVUnS1tKPVdtfSjhoJgMoHT+nXb739pV+/drYAlS5pexq4+q9eAqCygdxT4W/Tf/URAJUM5J4Lf5v+q4cASFi0UwIhUsHvo//KEwAJKWr91xqfAkBgpz/55b/v/C7pX/74/TKtAVazq66tACAwAQCBCQAITABA9ABwEAjxDgCHurcCgMAEAAR2MABcDwDtO1TH3wTArnMAoE839W4LAIF9KwB8GgAxTv9v/tsKAAK7P+a5ckOKXH70VZYGAWm8/MP3dn79ds3fWQFcfvSVw0Do1HZ9ny5NE6A+Y+t1ZwBYBUB/dtX1pENAqwCo35Q63RsA+1YBQgDqta8+99XzwRWAEIB+i3/gOgAI7GgAWAVAn7P/6BWAEID+in/SFkAIQF/Fn+wMwCcDkF+KupsUAIdSRQhAPofqbcqFfJNXAEIA+ij+2VsAIQDtF/9g8+jRoyWNeXfo7/0KMaRxbIs99/d3Fh0CHntR5wJQb/En+RRACECbxb94C7DNlgDaKPxVAmBMCAycDcD8bXPK+3UkD4CxITAQBDDtvCz1zXpWCYCpQTAQBkTzcsKVfGvdpWvVAJgaAjeEAb16OePy3TVv0bd6ACwJgtuEAq15ufBa/Rz35swWAKmCAHp3mfHW/NkD4DZhAGXvxF00AG4IAqK6LPwgnioCYJtAoFeXlT1563+HUu7Ew0JqawAAAABJRU5ErkJggg==" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
   <header class="site-header" id="top">
     <div class="container nav">
       <a href="#top" class="logo">
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIwIiBoZWlnaHQ9IjU2IiB2aWV3Qm94PSIwIDAgMjIwIDU2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iTGUgQm9uIFZUQyI+DQogIDxkZWZzPg0KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ29sZCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPg0KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZTdjODg3Ii8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNkNGFmNmEiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICA8L2RlZnM+DQogIDwhLS0gQmFkZ2UgLS0+DQogIDxyZWN0IHg9IjIiIHk9IjYiIHdpZHRoPSI0NCIgaGVpZ2h0PSI0NCIgcng9IjEyIiBmaWxsPSJ1cmwoI2dvbGQpIi8+DQogIDwhLS0gR3JvdXBlIHZvaXR1cmUgKyDDqWNsYWlyIC0tPg0KICA8cGF0aCBkPSJNMTEgMzMgTDIwIDMzIEMyMSAzMyAyMS42IDMyLjUgMjIgMzEuNiBMMjQuMiAyNiBIMzEgQzMxLjggMjYgMzIuNCAyNi42IDMyLjIgMjcuNCBMMzEuNCAzMCBIMzMuMiBDMzQgMzAgMzQuNiAzMC42IDM0LjQgMzEuNCBMMzMuOCAzMy40IEgzNSBDMzUuNiAzMyAzNiAzMy41IDM1LjggMzQuMSBMMzUgMzYgSDExIFoiIGZpbGw9IiMxYTE0MDgiLz4NCiAgPGNpcmNsZSBjeD0iMTYiIGN5PSIzNyIgcj0iMi40IiBmaWxsPSIjMWExNDA4Ii8+DQogIDxjaXJjbGUgY3g9IjI5IiBjeT0iMzciIHI9IjIuNCIgZmlsbD0iIzFhMTQwOCIvPg0KICA8cGF0aCBkPSJNMjEuNSAxMyBMMTggMjMgSDIxIEwyMCAzMCBMMjUgMTkgSDIxLjUgWiIgZmlsbD0iIzFhMTQwOCIvPg0KICA8IS0tIFRleHRlIC0tPg0KICA8dGV4dCB4PSI1OCIgeT0iMjYiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCAnUGxheWZhaXIgRGlzcGxheScsIHNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZWVmMWY2Ij5MZSYjMTYwO0JvbjwvdGV4dD4NCiAgPHRleHQgeD0iNTgiIHk9IjQ2IiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1BsYXlmYWlyIERpc3BsYXknLCBzZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0idXJsKCNnb2xkKSI+VlRDPC90ZXh0Pg0KPC9zdmc+DQo=" alt="Logo Le Bon VTC" class="logo-mark" width="170" height="44" />
+        <img src="data:image/png;base64,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" alt="Logo Le Bon VTC" class="logo-mark" width="40" height="40" />
+        <span class="logo-text">Le Bon <span class="logo-accent">VTC</span></span>
       </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
       <nav class="nav-links" aria-label="Navigation principale">
         <a href="#services">Services</a>
-        <a href="#flotte">Véhicules</a>
         <a href="#tarifs">Tarifs</a>
-        <a href="#reservation">Réserver</a>
-        <a href="tel:+33761081895" class="btn btn-ghost nav-cta">+33 7 61 08 18 95</a>
+        <a href="#comment">Comment ça marche</a>
+        <a href="#contact" class="btn btn-ghost">Réserver</a>
       </nav>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-overlay" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <span class="hero-badge">Paris · Île-de-France</span>
-      <h1>Votre chauffeur privé,<br /><span class="hl">partout en Île-de-France</span></h1>
-      <p class="hero-lead">
-        Transferts aéroports, gares, mise à disposition et courses sur mesure.
-        Véhicule <strong>essence hybride</strong>, confort premium et ponctualité absolue.
-      </p>
-      <div class="hero-actions">
-        <a href="#reservation" class="btn btn-primary">Réserver une course</a>
-        <a href="#tarifs" class="btn btn-outline">Voir les tarifs</a>
+      <div class="hero-text">
+        <span class="badge">🚗 Votre chauffeur VTC en Île-de-France</span>
+        <h1>Réservez le <span class="hl">bon VTC</span><br />au bon prix</h1>
+        <p class="lead">
+          Transferts aéroports, gares et mise à disposition en Île-de-France.
+          Chauffeur ponctuel, véhicule confortable et prix clairs sur devis —
+          disponible 24h/24, 7j/7.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Réserver une course</a>
+          <a href="#tarifs" class="btn btn-ghost">Voir les tarifs</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>24/7</strong><span>Disponible</span></li>
+          <li><strong>IDF</strong><span>Toute la région</span></li>
+          <li><strong>Sur devis</strong><span>Prix clairs</span></li>
+        </ul>
       </div>
-      <ul class="hero-stats">
-        <li><strong>Éco · Van · Berline</strong><span>3 catégories de véhicules</span></li>
-        <li><strong>Sur devis</strong><span>Prix adapté à votre trajet</span></li>
-        <li><strong>24/7</strong><span>Disponible tous les jours</span></li>
-      </ul>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="leaf-card">
+          <img src="data:image/png;base64,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" alt="" width="120" height="120" />
+          <p>Un seul contact pour tous vos trajets. Simple, rapide et fiable.</p>
+        </div>
+      </div>
     </div>
-    <a href="#services" class="scroll-cue" aria-label="Défiler vers le bas">⌄</a>
   </section>
 
-  <!-- ===== SERVICES ===== -->
   <section class="section" id="services">
     <div class="container">
-      <header class="section-head">
-        <span class="eyebrow">Nos prestations</span>
-        <h2>Un service de transport pour chaque besoin</h2>
-        <p class="section-sub">De la course express au déplacement professionnel, Le Bon VTC s'adapte à vous.</p>
-      </header>
+      <h2 class="section-title">Nos services</h2>
+      <p class="section-sub">Une solution de transport adaptée à chaque besoin, en Île-de-France.</p>
       <div class="grid grid-4">
         <article class="card">
-          <div class="card-ic">✈️</div>
+          <div class="card-icon">✈️</div>
           <h3>Transferts aéroport</h3>
-          <p>CDG, Orly, Beauvais : accueil au terminal, suivi de vol et aide aux bagages.</p>
+          <p>Accueil au terminal, aide aux bagages et suivi de vol pour CDG, Orly et Beauvais.</p>
         </article>
         <article class="card">
-          <div class="card-ic">🚉</div>
+          <div class="card-icon">🚉</div>
           <h3>Transferts gare</h3>
-          <p>Gare du Nord, Montparnasse, Saint-Lazare… arrivez à l'heure, sans stress.</p>
+          <p>Gare de Lyon, Saint-Lazare, Montparnasse… Arrivez à l'heure, sans stress.</p>
         </article>
         <article class="card">
-          <div class="card-ic">💼</div>
+          <div class="card-icon">💼</div>
           <h3>Mise à disposition</h3>
-          <p>À l'heure ou à la journée pour vos rendez-vous et déplacements pro.</p>
+          <p>À l'heure ou à la journée pour vos déplacements pro et rendez-vous.</p>
         </article>
         <article class="card">
-          <div class="card-ic">🎉</div>
-          <h3>Événements</h3>
+          <div class="card-icon">🎉</div>
+          <h3>Événementiel</h3>
           <p>Mariages, soirées, séminaires : une mobilité élégante pour vos invités.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== FLOTTE / VÉHICULES ===== -->
-  <section class="section section-alt" id="flotte">
+  <section class="section section-alt" id="tarifs">
     <div class="container">
-      <header class="section-head">
-        <span class="eyebrow">Notre flotte</span>
-        <h2>Choisissez votre catégorie</h2>
-        <p class="section-sub">Tous nos véhicules sont des <strong>essence hybride</strong> récents, entretenus avec soin.</p>
-      </header>
-      <div class="grid grid-3">
-        <article class="fleet-card">
-          <div class="fleet-tag">Économique</div>
-          <div class="fleet-img">🚗</div>
-          <h3>Éco</h3>
-          <p class="fleet-meta">4 places · Hybride</p>
-          <p>L'essentiel du confort au meilleur rapport qualité-prix pour vos trajets courants.</p>
-          <ul class="fleet-list">
-            <li>Climatisation</li>
-            <li>Wifi à bord</li>
-            <li>Coffre spacieux</li>
-          </ul>
-        </article>
-        <article class="fleet-card featured">
-          <div class="fleet-tag tag-gold">Le plus demandé</div>
-          <div class="fleet-img">🚘</div>
-          <h3>Berline</h3>
-          <p class="fleet-meta">4 places · Hybride premium</p>
-          <p>Confort haut de gamme et silence de conduite pour vos déplacements pro et VIP.</p>
-          <ul class="fleet-list">
-            <li>Sièges cuir</li>
-            <li>Wifi & prises USB</li>
-            <li>Eau offerte</li>
-          </ul>
-        </article>
-        <article class="fleet-card">
-          <div class="fleet-tag">Famille / Groupe</div>
-          <div class="fleet-img">🚐</div>
-          <h3>Van</h3>
-          <p class="fleet-meta">7 places · Hybride</p>
-          <p>Parfait pour les familles, groupes et transferts avec bagages nombreux.</p>
-          <ul class="fleet-list">
-            <li>7 passagers</li>
-            <li>Grands coffres</li>
-            <li>Sièges enfants sur demande</li>
-          </ul>
-        </article>
+      <h2 class="section-title">Tarifs sur devis</h2>
+      <p class="section-sub">Un prix adapté à chaque trajet. Devis gratuit et personnalisé sur simple demande.</p>
+      <div class="table-wrap">
+        <table class="tarifs">
+          <thead>
+            <tr><th>Formule</th><th>Tarif</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Course standard</td><td><strong>Sur devis</strong></td></tr>
+            <tr><td>Mise à disposition (heure)</td><td>Sur devis</td></tr>
+            <tr><td>Journée (8h)</td><td>Sur devis</td></tr>
+            <tr><td>Transfert aéroport / gare</td><td>Sur devis</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">* Tarifs sur devis personnalisé, calculés selon le trajet et vos besoins. Contactez-nous pour un devis gratuit.</p>
+    </div>
+  </section>
+
+  <section class="section" id="comment">
+    <div class="container">
+      <h2 class="section-title">Comment ça marche</h2>
+      <p class="section-sub">Réserver votre course en 3 étapes simples.</p>
+      <div class="grid grid-3 steps">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Demande</h3>
+          <p>Remplissez le formulaire ou appelez-nous avec votre adresse, destination et horaire.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Confirmation</h3>
+          <p>Vous recevez un devis clair et la confirmation de votre chauffeur pour la course.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Course</h3>
+          <p>Votre chauffeur arrive à l'heure. Vous roulez confortablement vers destination.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== TARIFS ===== -->
-  <section class="section" id="tarifs">
-    <div class="container">
-      <header class="section-head">
-        <span class="eyebrow">Tarification</span>
-        <h2>Tarifs sur devis</h2>
-        <p class="section-sub">Un prix transparent, calculé selon votre trajet et vos besoins. Le devis est <strong>gratuit</strong>.</p>
-      </header>
-      <div class="quote-box">
-        <div class="quote-ic">📋</div>
-        <h3>Demandez votre devis en 1 minute</h3>
-        <p>Indiquez votre adresse de prise en charge, votre destination et votre créneau&nbsp;: nous revenons vers vous avec un tarif personnalisé, sans engagement.</p>
-        <a href="#reservation" class="btn btn-primary">Demander un devis</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ENGAGEMENT ===== -->
-  <section class="section section-alt" id="engagement">
-    <div class="container">
-      <header class="section-head">
-        <span class="eyebrow">Pourquoi nous</span>
-        <h2>Un service fiable et soigné</h2>
-      </header>
-      <div class="grid grid-3">
-        <article class="eco-card">
-          <div class="eco-ic">🌿</div>
-          <h3>Véhicule hybride</h3>
-          <p>Moins d'émissions et une conduite fluide pour un trajet plus agréable.</p>
-        </article>
-        <article class="eco-card">
-          <div class="eco-ic">⏱️</div>
-          <h3>Ponctualité</h3>
-          <p>Chauffeur à l'heure, suivi des vols et des trains en temps réel.</p>
-        </article>
-        <article class="eco-card">
-          <div class="eco-ic">🤝</div>
-          <h3>Accueil professionnel</h3>
-          <p>Aide aux bagages, discrétion et courtoisie à chaque course.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== RÉSERVATION ===== -->
-  <section class="section section-resa" id="reservation">
-    <div class="container resa-inner">
-      <div class="resa-info">
-        <span class="eyebrow light">Réservation</span>
-        <h2>Demandez votre course</h2>
-        <p class="resa-sub">Formulaire en 2 minutes ou contact direct. Réponse rapide, devis gratuit.</p>
+  <section class="section section-contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <h2 class="section-title light">Réservez votre course</h2>
+        <p class="section-sub light">Remplissez le formulaire ou contactez-nous directement.</p>
         <ul class="contact-list">
           <li>📞 <a href="tel:+33761081895">+33 7 61 08 18 95</a></li>
           <li>✉️ <a href="mailto:lazeregg98@gmail.com">lazeregg98@gmail.com</a></li>
           <li>🕒 Disponible 24h/24, 7j/7</li>
-          <li>📍 Paris & Île-de-France</li>
+          <li>📍 Intervention en Île-de-France</li>
         </ul>
       </div>
-      <form class="resa-form" id="booking-form" novalidate>
+      <form class="contact-form" id="booking-form" novalidate>
         <div class="field">
           <label for="name">Nom complet</label>
           <input type="text" id="name" name="name" required placeholder="Votre nom" />
@@ -214,16 +161,17 @@
           <input type="email" id="email" name="email" required placeholder="vous@email.com" />
         </div>
         <div class="field">
-          <label for="vehicule">Catégorie</label>
-          <select id="vehicule" name="vehicule">
-            <option value="eco">Éco</option>
-            <option value="berline" selected>Berline</option>
-            <option value="van">Van</option>
-          </select>
-        </div>
-        <div class="field">
           <label for="date">Date & heure</label>
           <input type="datetime-local" id="date" name="date" required />
+        </div>
+        <div class="field field-full">
+          <label for="vehicule">Type de course</label>
+          <select id="vehicule" name="vehicule">
+            <option value="aeroport">Transfert aéroport</option>
+            <option value="gare">Transfert gare</option>
+            <option value="adp">Mise à disposition</option>
+            <option value="event">Événementiel</option>
+          </select>
         </div>
         <div class="field field-full">
           <label for="message">Détails du trajet</label>
@@ -235,30 +183,28 @@
     </div>
   </section>
 
-  <!-- ===== FLOATING ACTIONS ===== -->
   <div class="float-actions" aria-label="Actions rapides">
-    <a class="float-btn float-call" href="tel:+33761081895" aria-label="Appeler">📞</a>
-    <a class="float-btn float-wa" href="https://wa.me/33761081895" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+    <a class="float-btn float-call" href="tel:+33761081895" aria-label="Appeler Le Bon VTC">📞</a>
+    <a class="float-btn float-wa" href="https://wa.me/33761081895" target="_blank" rel="noopener" aria-label="WhatsApp Le Bon VTC">💬</a>
     <a class="float-btn float-top" href="#top" aria-label="Haut de page">↑</a>
   </div>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIwIiBoZWlnaHQ9IjU2IiB2aWV3Qm94PSIwIDAgMjIwIDU2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iTGUgQm9uIFZUQyI+DQogIDxkZWZzPg0KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ29sZCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPg0KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZTdjODg3Ii8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNkNGFmNmEiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICA8L2RlZnM+DQogIDwhLS0gQmFkZ2UgLS0+DQogIDxyZWN0IHg9IjIiIHk9IjYiIHdpZHRoPSI0NCIgaGVpZ2h0PSI0NCIgcng9IjEyIiBmaWxsPSJ1cmwoI2dvbGQpIi8+DQogIDwhLS0gR3JvdXBlIHZvaXR1cmUgKyDDqWNsYWlyIC0tPg0KICA8cGF0aCBkPSJNMTEgMzMgTDIwIDMzIEMyMSAzMyAyMS42IDMyLjUgMjIgMzEuNiBMMjQuMiAyNiBIMzEgQzMxLjggMjYgMzIuNCAyNi42IDMyLjIgMjcuNCBMMzEuNCAzMCBIMzMuMiBDMzQgMzAgMzQuNiAzMC42IDM0LjQgMzEuNCBMMzMuOCAzMy40IEgzNSBDMzUuNiAzMyAzNiAzMy41IDM1LjggMzQuMSBMMzUgMzYgSDExIFoiIGZpbGw9IiMxYTE0MDgiLz4NCiAgPGNpcmNsZSBjeD0iMTYiIGN5PSIzNyIgcj0iMi40IiBmaWxsPSIjMWExNDA4Ii8+DQogIDxjaXJjbGUgY3g9IjI5IiBjeT0iMzciIHI9IjIuNCIgZmlsbD0iIzFhMTQwOCIvPg0KICA8cGF0aCBkPSJNMjEuNSAxMyBMMTggMjMgSDIxIEwyMCAzMCBMMjUgMTkgSDIxLjUgWiIgZmlsbD0iIzFhMTQwOCIvPg0KICA8IS0tIFRleHRlIC0tPg0KICA8dGV4dCB4PSI1OCIgeT0iMjYiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCAnUGxheWZhaXIgRGlzcGxheScsIHNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZWVmMWY2Ij5MZSYjMTYwO0JvbjwvdGV4dD4NCiAgPHRleHQgeD0iNTgiIHk9IjQ2IiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1BsYXlmYWlyIERpc3BsYXknLCBzZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjgwMCIgZmlsbD0idXJsKCNnb2xkKSI+VlRDPC90ZXh0Pg0KPC9zdmc+DQo=" alt="Logo Le Bon VTC" class="logo-mark" width="170" height="44" />
-        <p>Chauffeur privé à Paris et en Île-de-France. Véhicule essence hybride, service premium.</p>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjUAAACgCAYAAAD0IZ1BAAAbtElEQVR4nO3dCbQkZXXA8TsLqJQsFZYIhrEAF9TCBYUSdFxAoyIupVEJKIISIOIaSTRGQyIiLoDmqBgERUBGMJJSUaMgi46KhbuUCohQLuyDBYMVRJbJueR7+KZ5/eqrrurqWv6/c/oww9Trrtf9Xtft+917PxEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCHJUUHbLzxxuukZy469VETf+1u+/9c+ubWW28t/DkAAKDteh3UVAlehhTsENQAAPqgV0FNk0FMn4IcghoAQB90PqiZJJCpEnA0/XhNIKgBAPRBZ4Mam+CiyWCibedTBkENAKAPOhXUdCVw6Mp5ziGoAQD0QSeCmqIgoU0BQhfPnaAGANAHrQ5qFgsI2hAM9OX7IagBAPRBa4OacQFAF4OZtn9vBDUAgD5oXVDTtgv+EL5XghoAQB+0KqhZ6CLfx2Cmbd83QQ0AoA9aEdTM+qLeFrN6HghqAAB9sHTWJ0BAs3gA06YpyQAAtNlMMzWjF+whZmfa8NyQqQEADCKo2WSTTWoPar5zyiPv8/92f9Uv6n6YzmvqeVq7di27dAMAOq/x5ScCGnsLBTALPX8AAKDhTM3oBZnsTDueOzI1AIA+aCxTQ0BTzWgQQ8YGAIAZBDUENPUgsAEAYIZBDQFNvQhsAACYQVBDQDMdBDYAADQY1BDQTBeBDQAAM6ipocuJ5xUAgE4GNfOzNAQ00zX/+aUjCgAwZLUHNVxYZ4vnHwAwVLUGNdTRzAb1NQAATLGmhmWnZvF8AwCGrnCbhE033dRqm4Rvf2rHe//85AMurXhamNQkr8Mtt9zChpYAgM5bWveFFO3B6wIAGJLal5/I0swWzz8AYKgqBzUsO03mNxcfJk0ENmRrAABDsbzKF3PBbD6wWbHrRyd6ncjgAAD6rrblJy6a7cLrAQAYmomDGrI0zZskSzOH1wsA0He1ZGrICrSnnmY+XhcAwJBMFNTwqb9bWZo5vG4AgD6rnKkhG9BuvD4AgKGY2jYJAAAArd4mgbk0zdfU1L30NJq9YZsEAOiWJAq2FZGVIvIkEXm4iGwnIpuLiCMiG4jIbSKyVi85InKFiHxfRFb7YfxD6bFKc2qASeRZerPGywWHneC43qE8w/XJs9QXkUtqvMu7ReQuEbnDvIHmInKTiNwgIlfp+66IfNNxvTofEw1LouByEXmYxaFv98P46Cmdw4tF5CyLQy/yw3j3JAo+IiLNdGTYu90P4/tXuYMkCvR98wAR2VdEdi04/IHmto0JfF5h7uO3InK6iBzvh7H+eVhBzZIlf07mfOvkR4z9N0zHQ4Lja3+eNWvzlAMvq/U+Mdjl66XmU+FG5lPiitGD8izVH7b/EJGTHNfTAAjd8hkR+VeL414qIlMJakREgxobq6SHkijQ7MvbROT1Fh8Ii2xr7uvwJApOFJEj/DC+UYZeU8NFsVt4vTBD+mnoeBH5SZ6lO/FKdI5toPD4JAoeWveDJ1GwoYjsbXGoZg0/Kz2TRMHzROQXIvKOGgKa0aTG3+t9m0xYL1Ao3LBfx69t+iGBtnikJnzzLN1z1icCe34Ya6bNtg7jb6bw3O5peTE/1w9jXfrshSQKliVRoJmvL5nsyrRsrkt7SRS8J4mCJYMJakaXntDM0tO08HpiRjYRkf/Js/QpvAK9zNboElTdBrf0lETBBibrpMtETflnEflPGWKmhqWMbuJ1Q0voG/bpeZZuNusTgbUzTGF4kZ2TKNihzmyFiLzA4lAtVP+89ID5nrUoehZLQgcnUfBO6TCWnwaYpQFaQAuKPzzrk4AdP4yv1k62GSxBacvyVhbHne2H8a3SDx8SkefP8PH/PYmCzmZSaeluYbBC3Q0GYt88S49yXG/9wUloK13eebrlEtT7anpM22yFtih3XhIF+4nI60p+2Q9EJBKR80XkGhG5TkTuJyJ/KSKBiOxlAk3NkNrQupoTkyh4nB/Gt0vHFBYFbbbZZuvm11+whNF9o6/nzTff3GhxGHNqWj+n5kDH9T61wNfP/Zzof5eZTO9y8waq8zC2F5E9NIVt3lBtvNdxPV3LR8slUeCaC6Z2IxXZwQ/jKys+nv6c/dqiSDYTkQf5YfynKo9nHlOzJG+c9ryZMY+tvzM/F5G/sPySn2kA5IfxhRb3/WAR0dk9LypxSq/1w/hj0jEsPwGw4rjeOnO7W+fNOK53u+N6ueN6v3dc7zeO613ouJ7OM9Go+TzLp/XZPP3d4IexBg9fbXAJalfLrp/P1RHQtMD7SgQ0J4nI42wCmrnlQz+MQ51NI/Z0jo1+eOkUghoAtXJc7xYReYmIXGtx+KPnZYDQfk12QQ2m6ymJgofPTfy1oIMsD/bD+M6yj+OH8bGmy8nG9jOu7ZkIQQ2AaQU2Nu2hG5o2b3TDF0XEpiD3iUkU6F5EVWhmocjvShQwt9k/miXdIpope7MfxuvtyThBRug8y2NfLh1DoTBQQp6lf2XWpZ8qIo8SEf27jjC/07zZ6+ZxWvi6WkS+4rhe7/ZWKeE7M3yN9BPmE0TksSKytRne9oB5+1NpvcePzQXxXMf1tCV4ZvIs3dZcxLUmyTcdPxuZ89WfoZ+IyNe11ddxPd2kcCb8ML4tiQJtnX6l5RLUByZ5nCQKHmO539QZfhjbtJq3VhIFWo+2j8WhfxSRQysGNKJfn0TBW80Gl0X2TqLgAfq6S0cQ1AAW8ix9ooj8m4g8d0yGU3+XtHhwS3Mx1S6GdXmWakfCexzX0/8OjWZriuheUJUv0nmWLjUX0TeZzfvGLWltYm7bmUm1bxGRP+RZeqaIvN9xvcsrnIM+/n8VHLal43pr5n2NpviPMss1C31S13N9tLnpJoYfybP0BBE50nE9rXGZhVWWQc1LJw1qhrT0ZL5XDWyKnOyHsRZOV+aH8Q+SKFhtWuZHA6cficjFc7cuBTRWy090PvXP/A42JgsvLs9SJ8/S480v+PNKLtkuMRfO8/Is/XyepZoxGBKbDqhLtPi4yoPkWbqH6RrRwGQ3m67OEXpBeY3ugZNn6UfzLK1zf52x8ix9g+lg0U/ptgWZmr15s37dDKcya8bIZjuCXZIo8KYY1Fzqh7FegLtOW65taDBbp8j83mino+7fox/cNtFdzv0wfpMfxqv8ML5COqZUpoZduTEkeZauMDUEuoRR1Qt1ZkSepS9yXC+WYXiWxTETZ7DyLNW5Gx8ym/LVUWy81Ly576VZF8f1dP5H7UxWSbtXDqxwNxogn5tn6TMd1/u2NEgLVJMo0IzUYRaHa/bqmDL3bzbF3GkIs2mSKFhq+XuS+mGsS5C18cP4gyKit16hUBgYH9B8o6aAZs6DTNbmyX1/0vMs1XqIgywOPXXC+9c6prNNEFJ395RmF1bnWTqNdnM911MqBjRz7m+2m9BaoT51QWnnnI3PSPc9zLKN+4IGzqUXCGqAEXmW6nLEV8zFrW56Mf6SqaXopTxLdzJdGrpUspjIcb1LJrj/5SaDNs0ZNxoofHEKO4ofUaJ118ZDRESLPhvlh7EWgV9lceiuSRToOda99BT7Yfwr6b7HWR6ny9+wQFAD3NfHTGHmtOhGjmfkWdq5wVbzl1DyLN1QA8A8S7fIs3THPEtfmmepLgn80My4WMxaU6Q7ieNMl9C0abv5WXmW/nkEd3U2SzZlHWqWtGaxyWWtg/iSKNDOtV0GUiAsJd5nJi5gH5pedj/deWfpmUTWLjpVu3jHW/lqfva6LM/SZ1l+ktbi1k+LyGmmNXitqXOY66h5ZMHX72KWZ+ou/qvDyXmWnjzF+79LRA5wXM/mk/56TObk9ZaH/68pgtQC4stMN9Y2IrK7iLxaRJ5hcR+bmiWe3XSKstTvZhNEf8EUba4zAeE+Zg+gjS0LsnXEgNV02RqdbjnITZegdOibbZZmicXPj76mfaBBnI10yufRG70LaqYZ0Kjd9tf3nfEBzupPPpzAptuOtjhGW2lf6LietkSOvvF8Is/SU8ybuHa3LOaIPEs/OaWLZVv9yewtpZ0XkxQG2+7s/V0NTh3XG12iuNLcPp1n6X4mqNQlwcU8wbyWthdmW1/T1mjH9W4c+f8/1VuepavMkDSbXapXNh3U+GH8syQKLrEo6g2SKFjhh7HOcKpj6ek8P4yvl37QPZlsjP6MYAyWnyoGOHO30cAG3WNag/UCthgNQJ6zQEBzL8f17nRcTzfF+2TBfWlm52UyHIn+2jiuN+nSwX4WGTClr412BS1ac+G43ummTV8zOkXekWepLhvW5RwdbLZAQDP//BLTam5jVm86q+pagkqiQGc8PWVAS09iWSS8zg9jmynO6FtQM+0szWIIbHrBpiPlOMf1bIv2dJnk3kFri1yoh0CzIwc5rqf1NpPSwXpF9Pl+sW60aXOHjut9w3KTv80su7ls6FLlqzT4LTrQcb0vmcxNEV1WmwUNMNbV1AWlk7qL6sx0OFzpLF+L2XSu9WGzzsb0KqhpGzI23WGKdp9vsZavm8lZcVxPMwAfLzhszzxLbeomuk7rRL6bZ+mPJmmVzrN0V8v2+sPnT+y1pHtU2cwOqiuo+ZTjeteVON5mn546s0jWzJKSzXYYugS1bQ1LT2f7YTyzbSKmQNvyxeJ9B0MLamaZpRmXrVEENp2hF82iSbI/dVzPZufp0WWGog4bHes/FNrC+tU8Sz9rWudt6af4IjdOsjRhJhrb1Oo8Is/SxTsF7Hy55PE2rctFdUHTZDMEb8liS1BJFGxq2dHWp6UnscxyaS0ZhhbUtBmBTSfYtJHaLAOMshnjPqSgZv5yhGZutrA8XvfcKnJGhaLrs3QPKIvjni7VabdcGde2/MKn04XvrLgE9XwT4Bd1iun8qD6x2VdpgyQKOjv+oWm9CGrakKVZLFuDTtCdkYuU3kDQ7KisdQCLqePTf1dndOggwkXrCnQejuU8j4m3C3Bc74+WwYZm9Kq4zXE9m32T5ru1ze/lfhivschIqictsgRls/R0lh/GfasvsSlSV+6Uz6M3etHSvXz58tZnRGj1bj2bqadvyrPUpli1LN3rpk205VrnuxTVIG1oagIeaLo4tD11RxH56xLTfgMR+deCeSc7WmYiqhQhqx9YdN/oWPsqygY0yqboue6tIspaZbEx4xKzBYLu13WvJAp08vRzhrDX0wJsa6u0rb9srdggsaFlw4HNU1/zyyYfEva27sCsitZwXO8ukzq/zWSwfisiPzHLA8eZwl4twH28xd0dnmfpJxzXu6LCbt9izqGKq2scljaODgAsqz2p6PE+b7IOG1ksQX1ogaXFoi6ga8xebH3zO8vjtjPDGVE1ZTn/IvzNT1T9kDI9bT63tp3n/HMgyLpXmaLVWcyq6BTT9r6nZR3ScrMx5ThFBdzqDrOENO2Ao2qnmlWr+YjWD2f0wzg3+3EV2c1shVB26ekMP4zvlv6x3b9Ks5UYSk0NUIP7zfBZvF+epbN8/KlwXC8zc3hsOjz+dpF/WzalYGGS+oaiYtZpBCg2z18b2HQmzS1B3SOJAn0+967pvrvIppFAPbHuB06iYNskCi5NouCoJAp2lp7oRVDThuxHn893IKp+yq+qF/VtY6bi2hTwPijP0h3G/NsfGmppfmBN3SpdX0qalO7M/vuSXVDPFJFNCo6/zA9jrXfqI60Ds8lAPS2Jgrrrpp6rYwpE5O1aT5ZEwVVJFByTRIFm02Zdo9X9N9KhXejLfr8sE03dJLUOdepzy2ZsOf7+EWPS8TbdPxvkWXr/iktQmzbwc9KVrEtpfhjfkUTB50Tk4IJDd0+i4MF+GF9tufS0qsfP2dokCi62GOuwtcnWfK/Gh3/hyN89sxmv3q5JouC/zaiD1X4Yd2YAYCuCmqEFNJM+RwQ2U6UzMIoc5rje8dM9jV6y7drYvEIBr9J24SqV+EUTb5XNpoxDtsoiqLlnCSqJgo8ucGEdd5999mXLWVUH1RXUJFGwfUHH2TZml/jDRGRFiYLmmVve1YBmj0OuGvtv55+gheLNm/Y5EdjMvLXSZrdkTF6EPS5bpb9Yt1vUPe1cMaix6dS6vML9D8E3TRfathZLULrDd9Hwxe/5YTyuK64vPiMi77Joy98/iYJ3+2FctctP/YNl+YlmaToT0FjX1EyrA6rsfWnQMHer47g6NH1OVZ9/Op8qFezZ7BCN+7IZnDc2W+a4ntYcXGbx9U+e9Mk3AwB1C4ciNntEDZYfxrq8dqbla6Ubvg5xNs16/DD+leX+XjoT6iNVHy/5/6LgQ0sEXJ0ys0LhSQKaSUwzsJnVObFcNxU2hYg2dSGYJ89S1wzjk4pZkAssvn6fPEsn3S7gJRYzVsTy4jN0tntBhQXH3GUZIPXBByyPe0ESBUdP+iBJFOjv42mWNXxan6Y1Up3Sie6nqkHANAKbNp4TKgc1Re222+RZanuBvkeepSfkWXp1nqW6z9Hn8iz9YJ6lb8mz9OV5lu6eZ+mKPEtnvgw8RcdaBgtrC4Kar1ncx5Ya2EhJeZYuMbUDRb7nuB41NQX8MNbtJn4h1V3gh3GZ3cw7yw/jc0oMF3xbEgXHJlFQ6vqdRMHmZjim7bYsx5stMPof1DSZKajr4l9nENHGc7JBhmc8x/VuMS2pRd6ZZ6nV702epTqo7WWm6C4w2QDdZuEYHSZmWp1/LSKvlJ7RuTt5lmoh6IGWX3KO43qLtTufb7nFwDF5lo4rOB7nYMtCzRNK3u+Q1VHc2/cC4VFvKDHHSGtivptEgdX8miQK9jITv203z9UxCu+VDrL+hKh1NU1fFOu+6Ov9VS3YbeM5TYJOqgWdanYLLlqC0rkO77Z4mt8mIptZZCg+Kx1kgrulpoD3AeZ71T20nmqCGZtuojmnLPaPjuvdrlkvDSotirnPyrN0L8f1Cofp5Vm60mSTilw9hPqOGmlAcmSFr9elD20pHgw/jH+aRMG7Sjxvu2iNVxIF3zat198y20msMbN/9PfvGSKy7wTD+471w/hG6aDWpr2nlcWoEkS08Zx67JA8Sw+Z4v2HjuvpfjXznW3eFDSzspgjzZLRkWYPpPvIs1QzNG+1OI9THNerYxpunU7Os/TkBh/vcpMWL6KZnzdaDGt7mmZ+8ix9peN6Y39p8yzVpaoTLQf3/UsN2zAMhh/GVyZREJsM5SS+7IfxrGdHzcJ7zHNmM2VZzIeKleZWl4tE5CjpqMI0+pIlS+69zadZm/n/VvY2y2WZSe6/bedU9vkezbLZvhZDotmAgt2i5ztCO6byLD04z9LtzXLLxvrJP8/S00yB4zKLLI1Nxqfv/sl0OC3Kcb3rNbiwvE/trknyLP2weU22Mq+Rl2fpfnmWnmc6O2zazc8xWTw0t3w0tKWne5j9rXTLkFlNUP69iLxcBylKR5XK1DztoCvkGyc9VNril6t1FtH6HrbyJJmlNp7TQq8jxjrNbK5o8wlzp4p1Fu92XM+mTqTPznRc7wsljj/edM3sYXHsRmaAmN4mpctOBziu19tJwFOkgf1xE0zLvsUMpBskP4z/kETBnqbGz7YGpg5rReRFNc3BmZlOdD/ZBg+L/f+hnhPKMRev/RvYNuGrlrUcffZji+mz6zEZnZfU1F1j8ya/t+N61zbwWL3jh/H1psC7rLP8MNas6WCZpbdnNtjSfr1+3vXDeLV03NIqn/KrZG30fkZvtsswRUGCTRBRZrmnbedUNtMy/3UiS1PMcb3LzcTTqpsXjqMX5H1tllx67Psi8mzH9TRwKMVxvZvNG75uBjjNNPyejutp4IVml5EGufQ0yg/j3A/jfUzmuPTvSQkaeO5mWvE7r1WZGpsLrm3Wo8nsSJPnRFDSDMf1zhURbYO8qea71iK8lY7rZTJMd5uC35VVlt4c17vGdFlN4wKo4/sDx/U08EI12sFUpsD6WstBi4Phh/HHzGyZU2re5f06EXmFH8Z7+mHcm8FplYOaNtXY9N0kAQ2vz+Qc17tQRB5rOb+myJ1muUk//dcdKHWBXtg+rfszOa73ujo6ibRrzHG9/czE4ktrOMc/me6TXR3Xo/Cspl2oS9bHnGmKZbH+83i1H8YHaImmiLy/wgaT60Tk62ZIpeeHce/GFEzU0t22guEhqCNDQ5anPMf1tFD0uXmWauHe4eYCWubDwO3m0+rRjutpBqAP9KJzl7lpsHaHuf3R3LRFfa351K3BhmY8LrCZGzNpVi3P0kebGUNvMC3dZYpTbzYB1weYGDwVp5s6KBssPS3CD+NUR0UkUaAzsHY22conmGBnhYhsbPaI0qXzzPxsX2O6qS7WgX2m1qm3Cvt5N9988wWr/keDmroumMuWLattCaeo68h2NkxRrUud53TXXQuOPZmI7Wt000030ddtKc/SrUXkWWYuhG5w6YnIpmb43NwbyXXmQq5zOs52XE/rM9CQPEt15+fnmc6Rx5iBgPNfI82U/cpsYqpLHV837fwAOm7i4Xtka7qFLE09TCeMzixhbklLOa63xtQfLDqlGED/1FYo3NRylO3MlyZnw7TxnFgeBAAMzdK2ffq3WX4pCg5sgocy2xLYHFvHOdW59DQfWRoAwBBUztTUNbemrHFBwiyn97blnJhLAwAYookLhadZNFxULFyHslmRNp5TXa8FhcIAgD5Y2sbljWktw1S5/zaeUxGWnQAAQ1KYqdliiy2sN3K78MQd7v3z0/9OOyarWbq0/oHHd999d+/Oqerzv2bNGlq6AQCdN7VtEuZfYGd9sa/z/tp4TnU93wAAdFmtQc1odqBNgU2dwUjbzmn0ea4jSwYAgAw9UzONC2rVi3/d2ZW2npMioAEADNXSaV9Y61oWmTQImFbw0JZzqruOCQCArppaTc18dQY2c7c6juv6OVFHAwBAA0HNNOprxgUJo7dZafKcqKMBAKDBTM20A5uhIqABAGAGy08ENvUioAEAYIY1NQQ29SCgAQBgxkGNIrCphoAGAIAGt0mwsVBdDa3Is32+2CYBANAHjWVqFrsgU0C8MAJAAABqzNRsueWWtWZq5rvg49uv9/dnHHzltB6qc5p8bm688UY2tAQAdN5Mg5qFLt5DD25m8XwQ1AAA+qDx5SebC/ZCF/YhIMADAKDDmZr5hnpRn/X3TaYGANAHrQpqFsvS9DG4acv3SlADAOiD1gU1bbvgD+F7I6gBAPRBa4OaotqaLgY3bf1+CGoAAH3Q6qDGtnC4zQFOF86doAYA0AedCGrKdEW1IUjoynnOIagBAPRBp4KaNgcObTufMghqAAB90NmgpspMmyrBRdOP1wSCGgBAH3Q+qGnr0L62BzLzEdQAAPqgV0HNLIOcLgUxowhqAACDCGq22mqrzgY145x/wnYTf+0eh1wlfXPDDTewoSUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASGX/ByUZifW/JpCMAAAAAElFTkSuQmCC" alt="Logo Le Bon VTC" class="logo-mark" width="34" height="34" style="background:transparent;" />
+        <span class="logo-text" style="color:var(--cream); font-weight:700; font-size:1.25rem;">Le Bon <span class="logo-accent">VTC</span></span>
+        <p>Réservation VTC en Île-de-France. Ponctualité, confort et prix clairs.</p>
       </div>
       <nav class="footer-links" aria-label="Liens de pied de page">
         <a href="#services">Services</a>
-        <a href="#flotte">Véhicules</a>
         <a href="#tarifs">Tarifs</a>
-        <a href="#engagement">Pourquoi nous</a>
-        <a href="#reservation">Réserver</a>
+        <a href="#comment">Comment ça marche</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>© <span id="year"></span> Le Bon VTC — Tous droits réservés. Intervention Paris & Île-de-France.</p>
+      <p>© <span id="year"></span> Le Bon VTC — Tous droits réservés.</p>
     </div>
   </footer>
 
