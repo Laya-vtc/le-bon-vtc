@@ -59,7 +59,7 @@ a{color:inherit;text-decoration:none}
 /* ===== Hero ===== */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
 .hero-bg{
-  position:absolute;inset:0;background:url('hero-car.jpg') center/cover no-repeat;
+  position:absolute;inset:0;background:url('hero.jpg') center/cover no-repeat;
   transform:scale(1.05);animation:slowZoom 18s ease-in-out infinite alternate;
 }
 @keyframes slowZoom{from{transform:scale(1.05)}to{transform:scale(1.14)}}
